@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | To-Do List App</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Welcome to the To-Do List App</h1>
+    <p>Organize your life, one task at a time. Create an account to get started!</p>
+  </header>
+  <main class="signup-container">
+    <!-- Image Placeholder -->
+    <div class="image-placeholder">
+      <img src="your-image-link-here.jpg" alt="Sign Up Illustration">
+    </div>
+
+    <!-- Sign-Up Form -->
+    <form class="signup-form" onsubmit="handleSignup(event)">
+      <h2>Create Your Account</h2>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Re-enter your password" required>
+      </div>
+      <button type="submit" class="btn-submit">Sign Up</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Geofrey Kiprono. All rights reserved.</p>
+  </footer>
+
+  <!-- Script linking to app.js -->
+  <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Notes | To-Do List App</title>
+  <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Your To-Do List</h1>
+    <p>Write your tasks, set priorities, and stay organized!</p>
+  </header>
+  
+  <main>
+    <div class="notes-container">
+      <!-- Text area for task input -->
+      <textarea id="note-input" placeholder="Write your task here..."></textarea>
+      
+      <!-- Tool container for task styling and settings -->
+      <div class="tools-container">
+        <button onclick="toggleBold()">Bold</button>
+        <input type="color" id="color-picker" onchange="changeTextColor(event)">
+        <label for="priority">Priority:</label>
+        <select id="priority" onchange="setPriority(event)">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" onchange="setDeadline(event)">
+      </div>
+
+      <!-- Buttons for saving and clearing notes -->
+      <div class="button-container">
+        <button onclick="saveNote()">Save Note</button>
+        <button onclick="clearNote()">Clear Note</button>
+      </div>
+
+      <!-- Task List -->
+      <div class="task-list">
+        <h2>Task List</h2>
+        <ul id="task-list"></ul>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer with grey background -->
+  <footer class="footer">
+    <p>&copy; 2025 Geofrey Kiprono. All rights reserved.</p>
+  </footer>
+
+  <script src="notes.js"></script>
+</body>
+</html>
+
